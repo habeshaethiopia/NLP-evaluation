@@ -1,3 +1,4 @@
+<a href="https://colab.research.google.com/github/habeshaethiopia/NLP-evaluation/blob/main/NLP_evaluation.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 # NLP Evaluation Task: Economic News Aggregator
 
 This project implements an NLP pipeline in a single Jupyter Notebook (`NLP_evaluation.ipynb`) for extracting entities, summarizing documents, and designing an AI agent (*EconoBot*) to provide economic insights from news articles. It covers three parts: data preparation/exploration, information extraction/summarization, and agentic system design, using the NLTK Reuters Corpus.
@@ -34,7 +35,9 @@ This project implements an NLP pipeline in a single Jupyter Notebook (`NLP_evalu
    ```bash
    jupyter notebook NLP_evaluation.ipynb
    ```
-   Alternatively, upload `NLP_evaluation.ipynb` to Google Colab.
+   Alternatively, upload `NLP_evaluation.ipynb` to Google Colab. 
+
+I have already work on the colab link [here](https://colab.research.google.com/drive/1WrfjYTRANy3UGyobRP7V5WUOBbp8-veR?usp=sharing)
 
 ### Dependencies
 Listed in `requirements.txt`:
@@ -168,4 +171,6 @@ The `NLP_evaluation.ipynb` notebook is organized into sections corresponding to 
 - **Summarization Error**: Document 1’s “index out of range” error (Part 2) requires stricter input truncation (e.g., 1024 tokens) to prevent crashes.
 - **Evaluation**: Low ROUGE/BLEU scores (ROUGE-1 F1: 0.5275, BLEU: 0.0656) due to phrasing differences (e.g., “pct” vs. “%”). Standardize terms or use BLEU smoothing.
 - **Scalability**: For real-time news, integrate NewsAPI.org or RSS feeds. FAISS can enhance document retrieval efficiency.
+
+you can find the pdf report [here](./NLP%20Evaluation%20Report.pdf)
 
